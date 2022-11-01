@@ -12,4 +12,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  slogan: string = 'Your one stop shop for everything';
+  source: string = '../../assets/shopping.jpg'
+
+  getSlogan(){
+    return 'Your one stop shop for everything';
+  }
+
 }

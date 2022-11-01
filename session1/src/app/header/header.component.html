@@ -1,8 +1,9 @@
 <div class="header">
   <div class="site-image">
-    <img src="../../assets/shopping.jpg" alt="" height="240" width="320">
+     <img [src]="source"  alt="" height="240" width="320"><!--property binding -->
   </div>
   <div class="site-slogan">
-    <h2>Your one stop shop for everything</h2>
+    <h2>{{slogan}}</h2><!--string interpolation -->
+    <!-- <h2> {{getSlogan()}} </h2>string interpolation -->
   </div>
 </div>
