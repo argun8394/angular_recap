@@ -16,7 +16,10 @@
     </div>
     <div class="options">
       <button class="btn btn-success">Show Details</button>
-      <button class="btn btn-warning">Buy Now</button>
+      <button class="btn btn-warning" *ngIf="item.available === 'Available'; else notifyme ">Buy Now</button> <!--ngIf kullanımı ve else ile ng-template kullanımı -->
     </div>
+    <ng-template #notifyme>
+      <button class="btn btn-danger">Notify Me</button>
+    </ng-template>
   </div>
 </div>
