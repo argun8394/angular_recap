@@ -1,4 +1,4 @@
-<div class="search-div">
+<div class="search-div" [ngClass]="{changeBackground: searchValue != ''}"> <!-- ngClass kullanımı-->
   <span><b>Search:</b></span>
   <!-- <input type="text" (input)="changesearchValue($event)"> -->
    <input type="text" [(ngModel)]="searchValue"> <!--Two way Data Binding -->
