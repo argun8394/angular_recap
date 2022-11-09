@@ -62,10 +62,16 @@ export class CoursesComponent implements OnInit {
   }
 
   courseCountRadioButton: string = 'All';
+  searchText: string ='';
 
   onFilterRadioButtonChanged(data: string) {
     this.courseCountRadioButton = data;
     console.log(this.courseCountRadioButton)
+  }
+
+  onSearchTextEntered(searchValue: string) {
+    this.searchText = searchValue;
+    // console.log(this.searchText)
   }
 
 }
