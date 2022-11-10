@@ -1,0 +1,8 @@
+<div class="card">
+   <ng-content select=".title"></ng-content><!--ng-content sayesinde component selectoru(burada app-component te kullanılan selector arasındakiler) arasındaki html elementleri görüntülemeyi sağlar -->
+  <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <ng-content select=".btn-more"></ng-content><!--select keywordu kullanılmazsa ng-content birden falza yerde yazılması durumunda en sondaki sadece işlev görür üsttekiler pasif kalır,
+  select keywordu içine class ismi yazılarak istenilen yerde görüntğleme yapılır. -->
+</div>
