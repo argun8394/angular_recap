@@ -1,0 +1,11 @@
+<div class="container">
+  <input type="text" #input>
+  <button (click)="OnSubmit(input)" >Submit</button>
+   <app-demo [value]="inputText" *ngIf="destroy">
+     <p>This is pojrcted content {{inputText}}</p><!--inputtaki değişiklik ngAfterContentChecked i tetikler -->
+   </app-demo><!--demo component i her initial olduğunda constructor çağrılır -->
+  <!-- <app-demo [value]="inputText"></app-demo>
+  <app-demo [value]="inputText"></app-demo> -->
+  <br><br>
+  <button (click)="DestroyComponent()">Destroy</button>
+</div>
